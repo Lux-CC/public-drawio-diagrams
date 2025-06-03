@@ -277,7 +277,7 @@
         <mxCell id="TdjOEDjCtDGNR1J-fkpf-18" value="Private subnet (without internet access)" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#00A4A6;fillColor=#E6F6F7;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=0;" parent="6kbcMm_zYJfw31hf7yNc-2" vertex="1">
           <mxGeometry x="216" y="400" width="254" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-0" value="application example" style="locked=1;" parent="6kbcMm_zYJfw31hf7yNc-0" />
+        <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-0" value="application example" style="" parent="6kbcMm_zYJfw31hf7yNc-0" />
         <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-5" value="AWS Application &lt;br&gt;Load balancer" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.application_load_balancer;" parent="ZCuwWBE4Jfgmy3PiZ6JK-0" vertex="1">
           <mxGeometry x="-3" y="301" width="78" height="78" as="geometry" />
         </mxCell>
@@ -293,50 +293,70 @@
         <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-9" value="AWS DynamoDB Table&lt;br&gt;(on public server)" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#C925D1;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.dynamodb;" parent="ZCuwWBE4Jfgmy3PiZ6JK-0" vertex="1">
           <mxGeometry x="290" y="305" width="78" height="78" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="ZCuwWBE4Jfgmy3PiZ6JK-0" source="ZCuwWBE4Jfgmy3PiZ6JK-5" target="ZCuwWBE4Jfgmy3PiZ6JK-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="ZCuwWBE4Jfgmy3PiZ6JK-0" source="ZCuwWBE4Jfgmy3PiZ6JK-7" target="ZCuwWBE4Jfgmy3PiZ6JK-8" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=4;" parent="ZCuwWBE4Jfgmy3PiZ6JK-0" source="ZCuwWBE4Jfgmy3PiZ6JK-7" target="ZCuwWBE4Jfgmy3PiZ6JK-6" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=4;" parent="ZCuwWBE4Jfgmy3PiZ6JK-0" source="ZCuwWBE4Jfgmy3PiZ6JK-14" target="ZCuwWBE4Jfgmy3PiZ6JK-18" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-14" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" parent="ZCuwWBE4Jfgmy3PiZ6JK-0" vertex="1">
           <mxGeometry x="-170" y="100" width="78" height="78" as="geometry" />
-        </mxCell>
-        <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=4;" parent="ZCuwWBE4Jfgmy3PiZ6JK-0" source="ZCuwWBE4Jfgmy3PiZ6JK-18" target="ZCuwWBE4Jfgmy3PiZ6JK-5" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-273.9185091598231" y="519" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="100" y="225" />
-              <mxPoint x="36" y="225" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=4;" parent="ZCuwWBE4Jfgmy3PiZ6JK-0" source="ZCuwWBE4Jfgmy3PiZ6JK-6" target="ZCuwWBE4Jfgmy3PiZ6JK-18" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="169" y="225" />
-              <mxPoint x="140" y="225" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=4;" parent="ZCuwWBE4Jfgmy3PiZ6JK-0" source="ZCuwWBE4Jfgmy3PiZ6JK-18" target="ZCuwWBE4Jfgmy3PiZ6JK-9" edge="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-18" value="&lt;font style=&quot;font-size: 20px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;Internet&lt;/font&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.internet_alt1;labelPosition=center;" parent="ZCuwWBE4Jfgmy3PiZ6JK-0" vertex="1">
           <mxGeometry x="80" y="115" width="78" height="48" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-1" value="textbox" style="" parent="6kbcMm_zYJfw31hf7yNc-0" />
+        <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-1" value="textbox" style="locked=1;" parent="6kbcMm_zYJfw31hf7yNc-0" />
         <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-3" value="&lt;div&gt;&lt;p style=&quot;font-size: 24px; font-weight: 700; background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193)); display: inline !important;&quot; data-end=&quot;178&quot; data-start=&quot;140&quot;&gt;&lt;strong data-end=&quot;178&quot; data-start=&quot;140&quot;&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=&quot;font-size: 24px; font-weight: 700; background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193)); display: inline !important;&quot; data-end=&quot;178&quot; data-start=&quot;140&quot;&gt;&lt;strong data-end=&quot;178&quot; data-start=&quot;140&quot;&gt;AWS Networking – VPC Design (1)&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 24px; background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot; data-end=&quot;250&quot; data-start=&quot;180&quot;&gt;When designing a basic VPC, think about&amp;nbsp;&lt;b&gt;&lt;span style=&quot;&quot; data-end=&quot;249&quot; data-start=&quot;220&quot;&gt;two directions of traffic&lt;/span&gt;:&lt;/b&gt;&lt;/p&gt;&lt;ol style=&quot;font-size: 24px; background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot; data-end=&quot;572&quot; data-start=&quot;252&quot;&gt;&lt;li style=&quot;&quot; data-end=&quot;345&quot; data-start=&quot;252&quot;&gt;&lt;p data-end=&quot;345&quot; data-start=&quot;255&quot;&gt;&lt;strong data-end=&quot;283&quot; data-start=&quot;255&quot;&gt;Users accessing your app (blue lines)&lt;/strong&gt;&lt;br&gt;→ Your web app needs to be&amp;nbsp;&lt;span style=&quot;&quot; data-end=&quot;344&quot; data-start=&quot;313&quot;&gt;reachable from the internet&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;&quot; data-end=&quot;572&quot; data-start=&quot;347&quot;&gt;&lt;p data-end=&quot;572&quot; data-start=&quot;350&quot;&gt;&lt;strong data-end=&quot;384&quot; data-start=&quot;350&quot;&gt;Your app reaching the internet (red lines)&lt;/strong&gt;&lt;br&gt;→ Your app might need to call APIs, download updates, or access services like&amp;nbsp;&lt;span style=&quot;&quot; data-end=&quot;471&quot; data-start=&quot;465&quot;&gt;S3&lt;/span&gt;&amp;nbsp;or&amp;nbsp;&lt;span style=&quot;&quot; data-end=&quot;487&quot; data-start=&quot;475&quot;&gt;DynamoDB&lt;/span&gt;.&lt;br data-end=&quot;491&quot; data-start=&quot;488&quot;&gt;&lt;br&gt;Remember these AWS services are public — your app&amp;nbsp;&lt;span style=&quot;&quot; data-end=&quot;557&quot; data-start=&quot;532&quot;&gt;needs internet access&lt;/span&gt;&amp;nbsp;to reach them.**&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;font-size: 24px; background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot; data-end=&quot;606&quot; data-start=&quot;579&quot;&gt;&lt;strong style=&quot;font-weight: 700;&quot; data-end=&quot;606&quot; data-start=&quot;579&quot;&gt;How it’s usually set up&lt;br&gt;&lt;/strong&gt;&lt;span style=&quot;&quot; data-end=&quot;606&quot; data-start=&quot;579&quot;&gt;Divide a VPC into &#39;chunks&#39; called subnets.&lt;/span&gt;&lt;/p&gt;&lt;ul style=&quot;font-size: 24px; background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot; data-end=&quot;1333&quot; data-start=&quot;1134&quot;&gt;&lt;li style=&quot;&quot; data-end=&quot;844&quot; data-start=&quot;608&quot;&gt;&lt;p style=&quot;&quot; data-end=&quot;844&quot; data-start=&quot;610&quot;&gt;&lt;strong style=&quot;font-weight: 700;&quot; data-end=&quot;627&quot; data-start=&quot;610&quot;&gt;Public Subnet&lt;/strong&gt;&lt;br&gt;Used for traffic coming from users.&lt;br&gt;For&amp;nbsp;&lt;span style=&quot;&quot; data-end=&quot;704&quot; data-start=&quot;676&quot;&gt;security and performance&lt;/span&gt;, apps usually&amp;nbsp;&lt;span style=&quot;&quot; data-end=&quot;746&quot; data-start=&quot;719&quot;&gt;don’t run directly here&lt;/span&gt;.&lt;br&gt;Instead, you place a&amp;nbsp;&lt;span style=&quot;&quot; data-end=&quot;790&quot; data-start=&quot;773&quot;&gt;load balancer&lt;/span&gt;&amp;nbsp;here, which routes traffic to your internal services.&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;&quot; data-end=&quot;961&quot; data-start=&quot;846&quot;&gt;&lt;p data-end=&quot;961&quot; data-start=&quot;848&quot;&gt;&lt;strong data-end=&quot;866&quot; data-start=&quot;848&quot;&gt;Private Subnet&lt;/strong&gt;&lt;br&gt;Not directly accessible from the outside (only via service in public subnet).&lt;br&gt;Used for app servers, databases, and background jobs.&lt;br&gt;You can make private subnets WITH internet access, OR without internet, by connecting to a NAT gateway.&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;&quot; data-end=&quot;1100&quot; data-start=&quot;963&quot;&gt;&lt;p style=&quot;&quot; data-end=&quot;1100&quot; data-start=&quot;965&quot;&gt;&lt;strong style=&quot;font-weight: 700;&quot; data-end=&quot;980&quot; data-start=&quot;965&quot;&gt;NAT Gateway&lt;/strong&gt;&lt;br data-end=&quot;983&quot; data-start=&quot;980&quot;&gt;&lt;b&gt;Placed in the public subnet.&lt;/b&gt;&lt;br data-end=&quot;1016&quot; data-start=&quot;1013&quot;&gt;&lt;b&gt;Lets resources in the private subnet reach the internet&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;&quot; data-end=&quot;1099&quot; data-start=&quot;1074&quot;&gt;&lt;b&gt;without exposing them.&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;**there are ways to circumvent this, but for simplicity these are not discussed.&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;arcSize=8;spacingLeft=30;spacingBottom=30;container=1;spacingRight=10;" parent="ZCuwWBE4Jfgmy3PiZ6JK-1" vertex="1">
           <mxGeometry x="-1050" width="700" height="1220" as="geometry" />
         </mxCell>
         <mxCell id="ZCuwWBE4Jfgmy3PiZ6JK-4" value="&lt;p data-end=&quot;1133&quot; data-start=&quot;1107&quot;&gt;&lt;strong data-end=&quot;1131&quot; data-start=&quot;1107&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;✅ Developer Takeaway&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul data-end=&quot;1333&quot; data-start=&quot;1134&quot;&gt;&lt;li data-end=&quot;1224&quot; data-start=&quot;1134&quot;&gt;&lt;p data-end=&quot;1224&quot; data-start=&quot;1136&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;strong data-end=&quot;1179&quot; data-start=&quot;1136&quot;&gt;Load balancer goes in the public subnet&lt;/strong&gt;, your app stays in the &lt;strong data-end=&quot;1221&quot; data-start=&quot;1203&quot;&gt;private subnet&lt;/strong&gt;.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-end=&quot;1333&quot; data-start=&quot;1225&quot;&gt;&lt;p data-end=&quot;1333&quot; data-start=&quot;1227&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Add a &lt;strong style=&quot;&quot; data-end=&quot;1248&quot; data-start=&quot;1233&quot;&gt;NAT Gateway&lt;/strong&gt; if your app needs to call the internet — including AWS services like S3 or DynamoDB, and connect the private subnet of your app access to the NAT gateway.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;arcSize=8;spacingLeft=30;spacingBottom=30;container=1;" parent="ZCuwWBE4Jfgmy3PiZ6JK-1" vertex="1">
           <mxGeometry x="510" y="380" width="550" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="AG-WSn_lvvxfaMg6WQV9-0" value="inbound" style="locked=1;" parent="6kbcMm_zYJfw31hf7yNc-0" />
+        <mxCell id="AG-WSn_lvvxfaMg6WQV9-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="AG-WSn_lvvxfaMg6WQV9-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="36" y="379" as="sourcePoint" />
+            <mxPoint x="35" y="466" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AG-WSn_lvvxfaMg6WQV9-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="AG-WSn_lvvxfaMg6WQV9-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="35" y="544" as="sourcePoint" />
+            <mxPoint x="35" y="655" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AG-WSn_lvvxfaMg6WQV9-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=4;" edge="1" parent="AG-WSn_lvvxfaMg6WQV9-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-96" y="139" as="sourcePoint" />
+            <mxPoint x="82" y="139" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AG-WSn_lvvxfaMg6WQV9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=4;" edge="1" parent="AG-WSn_lvvxfaMg6WQV9-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="163" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="100" y="225" />
+              <mxPoint x="36" y="225" />
+            </Array>
+            <mxPoint x="36" y="301" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AG-WSn_lvvxfaMg6WQV9-1" value="outbound" style="" parent="6kbcMm_zYJfw31hf7yNc-0" />
+        <mxCell id="AG-WSn_lvvxfaMg6WQV9-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=4;" edge="1" parent="AG-WSn_lvvxfaMg6WQV9-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="74" y="505" as="sourcePoint" />
+            <mxPoint x="169" y="379" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AG-WSn_lvvxfaMg6WQV9-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=4;" edge="1" parent="AG-WSn_lvvxfaMg6WQV9-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="169" y="225" />
+              <mxPoint x="140" y="225" />
+            </Array>
+            <mxPoint x="169" y="301" as="sourcePoint" />
+            <mxPoint x="140" y="163" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AG-WSn_lvvxfaMg6WQV9-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=4;" edge="1" parent="AG-WSn_lvvxfaMg6WQV9-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="156" y="139" as="sourcePoint" />
+            <mxPoint x="329" y="305" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
