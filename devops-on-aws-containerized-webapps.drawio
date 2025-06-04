@@ -1,13 +1,10 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.1.3">
-  <diagram name="Page-1" id="Uv0GA4SNd6SNXI4vOZ5g">
-    <mxGraphModel dx="983" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.1.3" pages="3">
+  <diagram name="simple flow" id="Uv0GA4SNd6SNXI4vOZ5g">
+    <mxGraphModel dx="1310" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-28" value="AWS Dev Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1850" y="610" width="140" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;p data-end=&quot;243&quot; data-start=&quot;190&quot;&gt;&lt;strong data-end=&quot;243&quot; data-start=&quot;190&quot;&gt;AWS Architecture – Using Multiple AWS Accounts&lt;/strong&gt;&lt;/p&gt;&lt;p data-end=&quot;334&quot; data-start=&quot;245&quot;&gt;Using multiple AWS accounts helps separate &lt;strong data-end=&quot;298&quot; data-start=&quot;288&quot;&gt;access&lt;/strong&gt;, &lt;strong data-end=&quot;311&quot; data-start=&quot;300&quot;&gt;billing&lt;/strong&gt;, and &lt;strong data-end=&quot;333&quot; data-start=&quot;317&quot;&gt;blast radius&lt;/strong&gt;. That is because AWS accounts are (almost) completely isolated from eachother in all aspects (performance, limits, access management, cost).&amp;nbsp;&lt;/p&gt;&lt;p data-end=&quot;491&quot; data-start=&quot;336&quot;&gt;Using multiple accounts enables the cloud team to give developers full access to a&amp;nbsp;&lt;strong data-end=&quot;378&quot; data-start=&quot;371&quot;&gt;dev AWS account&lt;/strong&gt;, but restrict access to a&amp;nbsp;&lt;strong data-end=&quot;396&quot; data-start=&quot;388&quot;&gt;prod AWS account&lt;/strong&gt;. Also costs stay isolated per environment. And if something breaks in &lt;strong data-end=&quot;469&quot; data-start=&quot;462&quot;&gt;dev&lt;/strong&gt;, &lt;strong data-end=&quot;479&quot; data-start=&quot;471&quot;&gt;prod&lt;/strong&gt; stays safe.&lt;/p&gt;&lt;p data-end=&quot;572&quot; data-start=&quot;493&quot;&gt;Deploying all environments in the same account increases the risk of accidents.&lt;/p&gt;&lt;p data-end=&quot;604&quot; data-start=&quot;579&quot;&gt;&lt;strong data-end=&quot;604&quot; data-start=&quot;579&quot;&gt;Account Structure&lt;/strong&gt;&lt;/p&gt;&lt;p data-end=&quot;678&quot; data-start=&quot;606&quot;&gt;Accounts are grouped into folders called &lt;strong data-end=&quot;677&quot; data-start=&quot;647&quot;&gt;Organizational Units (OUs)&lt;/strong&gt;.&lt;/p&gt;&lt;p data-end=&quot;774&quot; data-start=&quot;680&quot;&gt;&lt;strong data-end=&quot;697&quot; data-start=&quot;680&quot;&gt;Governance OU&lt;/strong&gt; – Owned by the &lt;strong data-end=&quot;727&quot; data-start=&quot;713&quot;&gt;Cloud Team&lt;/strong&gt;, this OU holds shared infrastructure accounts:&lt;/p&gt;&lt;ul data-end=&quot;954&quot; data-start=&quot;775&quot;&gt;&lt;li data-end=&quot;824&quot; data-start=&quot;775&quot;&gt;&lt;p data-end=&quot;824&quot; data-start=&quot;777&quot;&gt;&lt;strong data-end=&quot;791&quot; data-start=&quot;777&quot;&gt;Management&lt;/strong&gt; – For billing and org settings&lt;/p&gt;&lt;/li&gt;&lt;li data-end=&quot;895&quot; data-start=&quot;825&quot;&gt;&lt;p data-end=&quot;895&quot; data-start=&quot;827&quot;&gt;&lt;strong data-end=&quot;841&quot; data-start=&quot;827&quot;&gt;Networking&lt;/strong&gt; – For shared resources like DNS or datacenter links&lt;/p&gt;&lt;/li&gt;&lt;li data-end=&quot;954&quot; data-start=&quot;896&quot;&gt;&lt;p data-end=&quot;954&quot; data-start=&quot;898&quot;&gt;&lt;strong data-end=&quot;907&quot; data-start=&quot;898&quot;&gt;Audit&lt;/strong&gt; – For read-only security and monitoring access&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p data-end=&quot;1153&quot; data-start=&quot;956&quot;&gt;&lt;strong data-end=&quot;971&quot; data-start=&quot;956&quot;&gt;Workload OU&lt;/strong&gt; – Owned by &lt;strong data-end=&quot;1002&quot; data-start=&quot;983&quot;&gt;Developer Teams&lt;/strong&gt;, this OU contains application environments:&lt;br data-end=&quot;1049&quot; data-start=&quot;1046&quot;&gt;&lt;br&gt;&lt;strong data-end=&quot;1056&quot; data-start=&quot;1049&quot;&gt;Dev&lt;/strong&gt; (development and early testing), &lt;strong data-end=&quot;1098&quot; data-start=&quot;1090&quot;&gt;Test&lt;/strong&gt; (integration/staging), and &lt;strong data-end=&quot;1134&quot; data-start=&quot;1126&quot;&gt;Prod&lt;/strong&gt; (live production).&lt;/p&gt;&lt;p data-end=&quot;1215&quot; data-start=&quot;1155&quot;&gt;Teams may have one set of these accounts per app or project.&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;strokeWidth=4;perimeterSpacing=0;arcSize=5;spacing=0;spacingLeft=30;spacingRight=30;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="WrCfxh-vnWmKmpq0DMSl-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;p data-end=&quot;243&quot; data-start=&quot;190&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;strokeWidth=4;perimeterSpacing=0;arcSize=5;spacing=0;spacingLeft=30;spacingRight=30;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="120" y="140" width="990" height="1260" as="geometry" />
         </mxCell>
         <mxCell id="WrCfxh-vnWmKmpq0DMSl-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WrCfxh-vnWmKmpq0DMSl-3" target="WrCfxh-vnWmKmpq0DMSl-4">
@@ -39,11 +36,16 @@
         <mxCell id="WrCfxh-vnWmKmpq0DMSl-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WrCfxh-vnWmKmpq0DMSl-7" target="WrCfxh-vnWmKmpq0DMSl-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Zc3RU4ZIpLqdjYzdu9MM-1" value="manual approve" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WrCfxh-vnWmKmpq0DMSl-14">
+          <mxGeometry x="-0.2222" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="WrCfxh-vnWmKmpq0DMSl-7" value="AWS Acc Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2060" y="400" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="WrCfxh-vnWmKmpq0DMSl-8" value="AWS Prod Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2240" y="400" width="140" height="60" as="geometry" />
+          <mxGeometry x="2380" y="400" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="WrCfxh-vnWmKmpq0DMSl-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WrCfxh-vnWmKmpq0DMSl-6" target="WrCfxh-vnWmKmpq0DMSl-5">
           <mxGeometry relative="1" as="geometry">
@@ -54,29 +56,40 @@
         <mxCell id="WrCfxh-vnWmKmpq0DMSl-5" value="AWS Dev Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1850" y="400" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WrCfxh-vnWmKmpq0DMSl-17" target="WrCfxh-vnWmKmpq0DMSl-21">
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="dKhc6FEyKh_5SbTKwiFq" name="advanced flow">
+    <mxGraphModel dx="296" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-1" value="AWS Dev Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1850" y="610" width="140" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q-yv3Z5rBcekkCjQj5Yx-3" target="Q-yv3Z5rBcekkCjQj5Yx-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-17" value="Developer Laptop" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-3" value="Developer Laptop" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1470" y="550" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WrCfxh-vnWmKmpq0DMSl-21" target="WrCfxh-vnWmKmpq0DMSl-29">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q-yv3Z5rBcekkCjQj5Yx-10" target="Q-yv3Z5rBcekkCjQj5Yx-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-19" value="deploys to" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WrCfxh-vnWmKmpq0DMSl-18">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-5" value="deploys to" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q-yv3Z5rBcekkCjQj5Yx-4">
           <mxGeometry x="-0.3773" y="3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WrCfxh-vnWmKmpq0DMSl-21" target="WrCfxh-vnWmKmpq0DMSl-23">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q-yv3Z5rBcekkCjQj5Yx-10" target="Q-yv3Z5rBcekkCjQj5Yx-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-37" value="merge" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WrCfxh-vnWmKmpq0DMSl-20">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-7" value="merge" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q-yv3Z5rBcekkCjQj5Yx-6">
           <mxGeometry x="0.2476" y="-4" relative="1" as="geometry">
             <mxPoint x="4" y="-13" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="WrCfxh-vnWmKmpq0DMSl-23" target="WrCfxh-vnWmKmpq0DMSl-29">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Q-yv3Z5rBcekkCjQj5Yx-12" target="Q-yv3Z5rBcekkCjQj5Yx-18">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1820" y="740" />
@@ -84,68 +97,73 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-36" value="cleanup&lt;br&gt;&amp;nbsp;job" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WrCfxh-vnWmKmpq0DMSl-35">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-9" value="cleanup&lt;br&gt;&amp;nbsp;job" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q-yv3Z5rBcekkCjQj5Yx-8">
           <mxGeometry x="-0.1161" y="-2" relative="1" as="geometry">
             <mxPoint x="-2" y="-17" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-21" value="feature/* branch" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-10" value="feature/* branch" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1650" y="550" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="WrCfxh-vnWmKmpq0DMSl-31" target="WrCfxh-vnWmKmpq0DMSl-32">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Q-yv3Z5rBcekkCjQj5Yx-19" target="Q-yv3Z5rBcekkCjQj5Yx-21">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-23" value="main branch (CI/CD)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-12" value="main branch (CI/CD)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1650" y="710" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WrCfxh-vnWmKmpq0DMSl-25" target="WrCfxh-vnWmKmpq0DMSl-26">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="2250" y="692" />
-              <mxPoint x="2250" y="692" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-25" value="AWS Acc Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-14" value="AWS Acc Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2060" y="610" width="140" height="165" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-26" value="AWS Prod Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2270" y="600" width="160" height="177.5" as="geometry" />
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-15" value="AWS Prod Account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2343.14" y="602.5" width="160" height="177.5" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WrCfxh-vnWmKmpq0DMSl-23" target="WrCfxh-vnWmKmpq0DMSl-31">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q-yv3Z5rBcekkCjQj5Yx-12" target="Q-yv3Z5rBcekkCjQj5Yx-19">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1790" y="680" as="sourcePoint" />
             <mxPoint x="2060" y="680" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-38" value="deploy" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WrCfxh-vnWmKmpq0DMSl-27">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-17" value="deploy" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q-yv3Z5rBcekkCjQj5Yx-16">
           <mxGeometry x="-0.1911" y="-7" relative="1" as="geometry">
             <mxPoint y="-7" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-29" value="feature 1 infra" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-18" value="feature 1 infra" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1865" y="620" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-31" value="dev infra" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-19" value="dev infra" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1865" y="710" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WrCfxh-vnWmKmpq0DMSl-32" target="WrCfxh-vnWmKmpq0DMSl-33">
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q-yv3Z5rBcekkCjQj5Yx-21" target="Q-yv3Z5rBcekkCjQj5Yx-22">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="2260" y="730" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-32" value="acc infra" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="50zp94hQCNYPPTLhKQxg-1" value="manual approve" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q-yv3Z5rBcekkCjQj5Yx-20">
+          <mxGeometry x="0.0467" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-21" value="acc infra" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2075" y="710" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-33" value="prd infra" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2285" y="710" width="110" height="60" as="geometry" />
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-22" value="prd infra" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2358.14" y="712.5" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-40" value="prd infra cell 2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2285" y="620" width="110" height="60" as="geometry" />
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-23" value="prd infra cell 2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2358.14" y="622.5" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WrCfxh-vnWmKmpq0DMSl-41" value="prd infra cell 2, 3, ..., N" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2295" y="613.5" width="110" height="60" as="geometry" />
+        <mxCell id="Q-yv3Z5rBcekkCjQj5Yx-24" value="prd infra cell 2, 3, ..., N" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2368.14" y="616" width="110" height="60" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="oD7GHbhjsNDGWskra5__" name="ci-checks">
+    <mxGraphModel dx="786" dy="497" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
